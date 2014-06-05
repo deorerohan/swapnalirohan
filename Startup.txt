@@ -1,0 +1,15 @@
+@echo off
+echo Starting MS Outlook....
+timeout 60
+START /MIN outlook
+echo Starting Firefox....
+timeout 60
+START firefox
+echo Starting Notepad++....
+timeout 60
+START Notepad++
+echo Starting TrueCrypt....
+timeout 60
+"C:\Program Files\TrueCrypt\TrueCrypt" /v "C:\CAD\encrypted" /ls
+timeout 60
+START "C:\Project_Material\Project\GESA 5457 Apex\Branch\1-Dev\Source\Libraries\APEXLibraries.sln"
