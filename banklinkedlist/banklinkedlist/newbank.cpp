@@ -2,7 +2,7 @@
 #include "test.h"
 
 
-
+Rohan was here thsi will give you errors :)
 account::account(int acc_no,string cust_name,float acc_bal,string acc_type)
 {
 	lacc_no = acc_no;
