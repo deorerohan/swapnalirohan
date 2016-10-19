@@ -24,7 +24,7 @@ int main()
 	do
         {
 	    printf("Enter your choice\n");
-            printf("\n1.Open account\n2.Deposite money\n3.Withdraw money\n4.Balance enquiry\n5.Default\n");
+            printf("\n1.Open account\n2.Deposit money\n3.Withdraw money\n4.Balance enquiry\n5.Default\n");
             scanf("%d",&choice);
 	       switch(choice)
 	             {
@@ -61,7 +61,7 @@ void nwaccount(int count)
 {
      printf("OPEN NEW ACCOUNT\n");
      int i;
-     printf("Enter customer name,acconut no,amount,account type\n");
+     printf("Enter customer name,account number,amount,account type\n");
      scanf("%s %d %f %s",&a[count].cust_name,&a[count].acc_no,&a[count].amount,&a[count].acc_typ);
      for(i=0;i<=count;i++)
       {
@@ -75,7 +75,7 @@ void deposite(int count)
      int enter_accno,iterate=0;
      float enter_amount;
      printf("DEPOSITE MONEY\n");
-     printf("Enter account no wher u want to deposite money\n"); 
+     printf("Enter account number where you want to deposit money\n"); 
      scanf("%d",&enter_accno);
      printf("Enter amount to be deposited\n");
      scanf("%f",&enter_amount);
@@ -94,7 +94,7 @@ void withdraw(int count)
     int enter_accno,iterate=0;
     float enter_amount;
     printf("WITHDRAW MONEY\n");
-    printf("Enter the account no from where you want to withdraw money\n");
+    printf("Enter the account number from where you want to withdraw money\n");
     scanf("%d",&enter_accno);
     printf("Enter amount to be withdrawn\n");
     scanf("%f",&enter_amount);
@@ -115,7 +115,7 @@ void balnquiry(int count)
 {
     int enter_accno,iterate=0;
     printf("BALANCE ENQUIRY\n");
-    printf("Enter the account no you want to enquire about\n");
+    printf("Enter the account number you want to enquire about\n");
     scanf("%d",&enter_accno);
    for(iterate=0;iterate<=count;iterate++)
    {
