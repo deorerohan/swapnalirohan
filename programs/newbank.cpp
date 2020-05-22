@@ -23,7 +23,7 @@ int main()
 	do 
         {
 	   cout<<"Enter your choice\n";
-           cout<<"\n1.Open account\n2.Deposite money\n3.Withdraw money\n4.Balance enquiry\n5.Default\n";
+           cout<<"\n1.Open account\n2.Deposit money\n3.Withdraw money\n4.Balance enquiry\n5.Default\n";
            cin>>choice;
 	       switch(choice)
 	             {
@@ -60,7 +60,7 @@ void nwaccount(struct account *ptr,int count)
 {
      cout<<"OPEN NEW ACCOUNT"<<endl;
      int i;
-     cout<<"Enter customer name,acconut no,amount,account type"<<endl;
+     cout<<"Enter customer name, account number, amount, account type"<<endl;
      cin>>ptr[count].cust_name>>ptr[count].acc_no>>ptr[count].amount>>ptr[count].acc_typ;
      for(i=0;i<=count;i++)
       {
@@ -73,8 +73,8 @@ void deposite(struct account *ptr,int count)
 {
      int enter_accno,iterate=0;
      float enter_amount;
-     cout<<"DEPOSITE MONEY\n";
-     cout<<"Enter account no wher u want to deposite money\n"; 
+     cout<<"DEPOSIT MONEY\n";
+     cout<<"Enter account number where you want to deposit money\n"; 
      cin>>enter_accno;
      cout<<"Enter amount to be deposited\n";
      cin>>enter_amount;
@@ -93,7 +93,7 @@ void withdraw(struct account *ptr,int count)
     int enter_accno,iterate=0;
     float enter_amount;
     cout<<"WITHDRAW MONEY\n";
-    cout<<"Enter the account no from where you want to withdraw money\n";
+    cout<<"Enter the account number from where you want to withdraw money\n";
     cin>>enter_accno;
     cout<<"Enter amount to be withdrawn\n";
     cin>>enter_amount;
@@ -114,7 +114,7 @@ void balnquiry(struct account *ptr,int count)
 {
     int enter_accno,iterate=0;
     cout<<"BALANCE ENQUIRY\n";
-    cout<<"Enter the account no you want to enquire about\n";
+    cout<<"Enter the account number you want to enquire about\n";
     cin>>enter_accno;
    for(iterate=0;iterate<=count;iterate++)
    {
