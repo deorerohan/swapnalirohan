@@ -6,7 +6,7 @@ int main()
         do
         {
 	    printf("Enter your choice\n");
-            printf("\n1.Open account\n2.Deposite money\n3.Withdraw money\n4.Balance enquiry\n5.Default\n");
+            printf("\n1.Open account\n2.Deposit money\n3.Withdraw money\n4.Balance enquiry\n5.Default\n");
             scanf("%d",&i);
 	       switch(i)
 	             {
@@ -23,7 +23,7 @@ int main()
                              int i;
                              for(i=0;i<=1;i++)
 			     {
-                               printf("Enter customer name,acconut no,amount,account type\n");
+                               printf("Enter customer name,account no,amount,account type\n");
                                scanf("%s %d %f %s",&a[i].cust_name,&a[i].acc_no,&a[i].amount,&a[i].acc_typ);
 			     }
                              for(i=0;i<1;i++)
@@ -34,8 +34,8 @@ int main()
 		       	      break;
 
                        case 2:
-                              printf("DEPOSITE MONEY\n");
-                              printf("Enter account no wher u want to deposite money\n"); 
+                              printf("DEPOSIT MONEY\n");
+                              printf("Enter account number where u want to deposit money\n"); 
                               scanf("%d",&a[i].acc_no);
                               printf("Enter amount to be deposited\n");
                               scanf("%f",&a[i].amount);
@@ -44,15 +44,15 @@ int main()
 
                        case 3:
                               printf("WITHDRAW MONEY\n");
-                              printf("Enter the account no from where you want to withdraw money");
+                              printf("Enter the account number from where you want to withdraw money");
                               scanf("%d",&a[i].acc_no);
-                              printf("Enter amount to be withdraw\n");
+                              printf("Enter amount to be withdrawn\n");
                               scanf("%f",&a[i].amount);
                               break;
 
                        case 4:
                               printf("BALANCE ENQUIRY\n");
-                              printf("Enter the account no you want to enquire about\n");
+                              printf("Enter the account number you want to enquire about\n");
                               scanf("%d",&a[i].acc_no);
                               printf("");
                               break;
